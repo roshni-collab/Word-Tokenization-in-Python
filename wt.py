@@ -18,3 +18,7 @@ stop_words = set(stopwords.words('english'))
 filtered_tokens = [word for word in tokens if word not in stop_words]
 print(filtered_tokens)
 
+
+user_text = input("Enter a sentence for tokenization: ")
+tokens = tokenize_text(user_text)
+print(tokens)
