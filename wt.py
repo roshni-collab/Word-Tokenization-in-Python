@@ -5,4 +5,7 @@ text = "Hello! How are you doing today? NLP is fun and exciting."
 tokens = word_tokenize(text)
 print(tokens)
 
+tokens = [word for word in tokens if word.isalnum()]
+print(tokens)
+
 
