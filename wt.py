@@ -11,5 +11,10 @@ print(tokens)
 tokens = [word.lower() for word in tokens]
 print(tokens)
 
+from nltk.corpus import stopwords
+nltk.download('stopwords')
 
+stop_words = set(stopwords.words('english'))
+filtered_tokens = [word for word in tokens if word not in stop_words]
+print(filtered_tokens)
 
