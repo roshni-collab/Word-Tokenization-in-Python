@@ -22,3 +22,6 @@ print(filtered_tokens)
 user_text = input("Enter a sentence for tokenization: ")
 tokens = tokenize_text(user_text)
 print(tokens)
+
+with open("tokenized_words.txt", "w") as file:
+    file.write(" ".join(tokens))
