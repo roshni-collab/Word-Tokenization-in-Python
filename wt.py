@@ -8,4 +8,8 @@ print(tokens)
 tokens = [word for word in tokens if word.isalnum()]
 print(tokens)
 
+tokens = [word.lower() for word in tokens]
+print(tokens)
+
+
 
